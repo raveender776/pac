@@ -23,8 +23,7 @@ parameters {
          }
          else {
           print "B"
-         }
-         }
+          }
         }        
       }
     }
