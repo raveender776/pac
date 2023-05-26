@@ -6,7 +6,7 @@ pipeline {
       steps{
         script{
          StringValue = "Hello Edpresso"
-         println "here is your string reverse${StringValue.reverse()"}
+         println "here is your string reverse${StringValue.reverse()}"
         }        
       }
     }
