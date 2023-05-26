@@ -12,18 +12,12 @@ parameters {
     {
       steps{
         script{
-         StringValue = "Hello Edpresso"
-         println "here is your string reverse${StringValue.reverse()}"
-         println "here is my current build result ${currentBuild.result},${currentBuild.id}"
-         println "Here is your envirnment varibles ${env.SUBJECT}"
-         println "Here is your parameter value ${params.Subject},${params.ENV}"
-         score=input message: 'Please enter score value', parameters: [string(defaultValue: '10', name: 'score')]
-         if (score.toInteger() <= 50){
-          print "A"
+         var = 1
+         while (var <= 10)
+         {
+         println "Here is your var value :  ${var}"
+          var = var+1
          }
-         else {
-          print "B"
-          }
         }        
       }
     }
