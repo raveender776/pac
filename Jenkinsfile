@@ -5,13 +5,9 @@ pipeline {
     {
       steps{
         script{
-         class Main {
-             static void main(String[] args) {
-              String value = "Hello Edpresso";
-              println(value.reverse());
-           } 
-         }
-        }
+         StringValue = "Hello Edpresso"
+         println "here is your string reverse${StringValue.reverse()"}
+        }        
       }
     }
   }
