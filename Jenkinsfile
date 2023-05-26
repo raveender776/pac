@@ -5,8 +5,12 @@ pipeline {
     {
       steps{
         script{
-         var = 10
-         println "here is your var value ${var}"
+         class Main {
+             static void main(String[] args) {
+              String value = "Hello Edpresso";
+              println(value.reverse());
+           } 
+         }
         }
       }
     }
