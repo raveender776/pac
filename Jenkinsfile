@@ -4,12 +4,10 @@ pipeline {
   SUBJECT = "Jenkins-PAC"
 }
 parameters {
-  choice choices: ['dev sit pt prod'], name: 'Please  select environment'
+  choice choices: ['dev', 'sit ', 'pt ', 'prod'], description: 'Please choeese environment', name: 'ENV'
   string defaultValue: 'PAC', name: 'Subject'
 }
-
-
-  stages{
+ stages{
     stage("working with first stage")
     {
       steps{
