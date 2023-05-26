@@ -5,9 +5,10 @@ pipeline {
     {
       steps{
         script{
-        println "hellow welcome to PAC first program"
+         var = 10
+         println "here is your var value ${var}"
         }
-      }    
+      }
     }
   }
 }
