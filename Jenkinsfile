@@ -20,8 +20,10 @@ parameters {
          score 20  
          if (score <= 50){
           print "A"
-         else 
+         }
+         else {
           print "B"
+         }
          }
         }        
       }
