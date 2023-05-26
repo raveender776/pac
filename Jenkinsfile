@@ -17,7 +17,7 @@ parameters {
          println "here is my current build result ${currentBuild.result},${currentBuild.id}"
          println "Here is your envirnment varibles ${env.SUBJECT}"
          println "Here is your parameter value ${params.Subject},${params.ENV}"
-         input message: 'Please enter score value', parameters: [string(defaultValue: '10', name: 'score')]
+         score=input message: 'Please enter score value', parameters: [string(defaultValue: '10', name: 'score')]
          if (score <= 50){
           print "A"
          }
