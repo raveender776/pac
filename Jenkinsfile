@@ -1,6 +1,7 @@
 def myfunc(int a, int b)
 {
- println "Here is my your ${a} value: ,and Here is your ${b} value:",${a+b}
+ result = a + b
+ println "Here is my your ${a} value: ,and Here is your ${b} value:,${result}"
 }
 
 pipeline {
