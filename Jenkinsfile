@@ -10,6 +10,8 @@ pipeline {
     {
       steps{
         script{
+         str="Hi am from"
+         println "Here is your string Upper case:    ${str.toUppercase()}"
          myfunc()
        }
       }
