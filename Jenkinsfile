@@ -1,4 +1,4 @@
-def func()
+def myfunc()
 {
 println "Here is my functions topics"
 }
